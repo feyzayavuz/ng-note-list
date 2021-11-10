@@ -1,0 +1,14 @@
+<h1 mat-dialog-title>Add Note</h1>
+<div mat-dialog-content>
+  <form class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Note</mat-label>
+      <input matInput #message maxlength="550" #newItem>
+    </mat-form-field>
+  </form>
+  
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button (click)="addNewItem(newItem.value)">Save</button>
+</div>
